@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'ARCADE_N';
+    src: url('../assets/ARCADE_N.TTF');
+    font-style: normal;
+}
+
+body {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'ARCADE_N';
+}
+.double0{
+    background-color: darkred;
+    transition: all 100ms ease-out;
+}
+
+.double1{
+    background-color: rgb(255, 94, 0);
+    transition: all 100ms ease-out;
+}
+.double2{
+    background-color: rgb(255, 157, 0);
+    transition: all 100ms ease-out;
+}
+.double3{
+    background-color: rgb(255, 234, 0);
+    transition: all 100ms ease-out;
+}
+.double4{
+    background-color: rgb(208, 255, 0);
+    transition: all 100ms ease-out;
+}
+.double5{
+    background-color: rgb(115, 255, 0);
+    transition: all 100ms ease-out;
+}
+.double6{
+    background-color: rgb(0, 255, 238);
+    transition: all 100ms ease-out;
+}
+.double7{
+    background-color: rgb(0, 106, 255);
+    transition: all 100ms ease-out;
+}
+.double8{
+    background-color: rgb(187, 0, 255);
+    transition: all 100ms ease-out;
+}
+.double9{
+    background-color: rgb(255, 0, 179);
+    transition: all 100ms ease-out;
+}
+.double10{
+    background-color: gold;
+    transition: all 100ms ease-out;
+}
+
+
+h1 {
+    color: aqua;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+
+h5 {
+    color: yellow;
+}
+
+h6 {
+    font-size: 1em;
+    margin: 40px 0 10px 0;
+}
+
+p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.screen {
+    background-color: gray;
+    border: 10px solid black;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 25px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 80%;
+    margin-left: 7%;
+}
+
+#red {
+    background-color: red;
+    border: solid 10px rgb(109, 99, 99);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 5px 10px black;
+    margin-right: 10%;
+}
+
+#red:hover{
+    background-color: rgb(180, 0, 0);
+}
+
+#red:active{
+    box-shadow: none;
+    transform: translateY(20px);
+}
+
+#orange {
+    font-family: 'ARCADE_N';
+    color: white;
+    background-color: rgb(255, 191, 0);
+    border: solid 10px rgb(109, 99, 99);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 5px 10px black;
+}
+
+#orange:hover{
+    background-color: rgb(194, 126, 0);
+}
+
+#orange:active{
+    box-shadow: none;
+    transform: translateY(20px);
+}
+
+.scoreboard{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 20px 80px 20px;
+    outline: black 5px dashed;
+    position: absolute;
+    left: 2%;
+    top: 30%;
+}
+
+.scoreboard h2 {
+    font-size: 1em;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.scoreboard h3 {
+    font-size: 0.5em;
+}
+
+.scoreboard p {
+    font-size: 1em;
+}
+
+/*---------------------------FOR MOBILE--------------------------- */
+
+@media only screen and (max-width: 600px) {
+    .screen {
+        width: 90%;
+        margin: 10px 0 25px 2.5%;
+    }
+
+    .flex{
+        margin: 0;
+        width: 100%;
+    }
+
+    #red {
+        width: 200px;
+        height: 200px;
+        margin-right: 10%;
+    }
+
+    #orange {
+        width: 100px;
+        height: 100px;
+        font-size: 0.5em;
+    }
+
+    h1 {
+    font-size: 1em;
+    }
+    
+    h2 {
+        font-size: 2.5em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+
+    h4 {
+        font-size: 0.5em;
+    }
+    
+    h5 {
+        font-size: 0.75em;
+    }
+    
+    h6 {
+        font-size: 1em;
+        margin: 40px 0 10px 0;
+    }
+    
+    p {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    .scoreboard{
+        background-color: rgba(0, 0, 0, 0.0);
+        width: 40%;
+        padding: 0;
+        outline: none;
+        position: absolute;
+        left: 57.5%;
+        top: 45%;
+    }
+    
+    .scoreboard h2 {
+        font-size: 1em;
+        color: white;
+        margin-bottom: 0px;
+    }
+    
+    .scoreboard h3 {
+        font-size: 0.5em;
+    }
+    
+    .scoreboard p {
+        font-size: 0.5em;
+    }
+  }

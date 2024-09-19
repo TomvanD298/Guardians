@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
+.text-ontzichtbaar {
+    position: absolute;
+    color: white;
+	font-family: 'Poppins';
+    background-color: rgb(188, 155, 78);
+    font-size: 2em;
+    transform: rotate(15deg);
+    right: 30%;
+    top: 30%;
+    opacity: 0%;
+    scale: 0;
+    transition: all 1s ease;
+}
+
+.text-zichtbaar {
+    position: absolute;
+    color: white;
+    background-color: rgb(188, 155, 78);
+    font-size: 2em;
+    transform: rotate(15deg);
+    right: 11%;
+    top: 11%;
+    opacity: 100%;
+    scale: 1;
+    transition: all 1s ease;
+}
+
+
+.light-mode {
+    background-color: white;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 0;
+    transition: all 1s ease-in-out;
+}
+
+.dark-mode {
+    background-color: black;
+    background-image: url("../img/background-dark.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 0;
+    transition: all 1s ease-in-out;
+}
+
+#logo {
+    width: 25%;
+    position: absolute;
+    top: 4em;
+    left: 1em;
+    z-index: 3;
+    transform: rotate(-30deg);
+}
+
+/* ------------------------- {MUSIC PLAYER} -------------------------  */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 0px;
+}
+
+.interface {
+    position: relative;
+    width: 25vw;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+#player {
+    position: relative;
+    width: 100%;
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 1s ease-in-out;
+}
+
+#speakerL {
+    width: 22%;
+}
+
+#speakerR {
+    width: 22%;
+}
+
+
+
+#knopjes {
+    display: flex;
+    position: absolute;
+    bottom: 9.5vh;
+    left: calc(50% - 11.5vh);
+}
+
+#playbutton,
+#pausebutton,
+#nextbutton,
+#shufflebutton {
+    opacity: 50%;
+    width: 2.5em;
+    padding: 10px 0 10px 0;
+}
+
+#playbutton:hover,
+#pausebutton:hover,
+#nextbutton:hover,
+#shufflebutton:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+#playbutton {
+    margin-right: 1.2em;
+}
+
+#pausebutton {
+    margin-right: 0.7em;
+}
+
+#nextbutton {
+    margin-right: 1.3em;
+}
+
+
+#playbutton:active,
+#pausebutton:active,
+#nextbutton:active,
+#shufflebutton:active {
+    transform: translateY(4px);
+}
+
+#mixtape {
+    width: 15%;
+    margin: 0 0 0 70%;
+    cursor: pointer;
+}
+
+#mixtape:active {
+    transform: translateY(4px);
+}
+
+#mixtape:hover {
+    scale: 1.1;
+}
+
+
+/* --- Bron: https://www.w3schools.com/howto/howto_js_rangeslider.asp ---*/
+#volume-control {
+    bottom: 2.5em;
+    left: 15%;
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    height: 10px;
+    border-radius: 5px;
+    background: #000000;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#volume-control::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgb(6, 155, 254);
+    cursor: pointer;
+}
+
+/* ------------------------- {Groot} -------------------------  */
+
+.groot-verstopt {
+    height: 40%;
+    position: absolute;
+    z-index: -2;
+    top: 28em;
+    left: calc(50% - 10vh);
+    opacity: 0;
+    transition: all 4s ease-out;
+}
+
+.groot-zichtbaar {
+    height: 50%;
+    position: absolute;
+    z-index: -2;
+    top: 8em;
+    left: calc(50% - 14vh);
+    opacity: 100%;
+    transition: all 4s ease-out;
+}
+
+#grootknop {
+    position: absolute;
+    width: 7%;
+    bottom: 15em;
+    left: 4em;
+    cursor: pointer;
+}
+
+#grootknop:hover {
+    scale: 1.1;
+    transform: rotate(-20deg);
+}
+
+#grootknop:active {
+    transform: translateY(4px);
+}
+
+/* ------------------------- {Disco} -------------------------  */
+
+.disco-verstopt {
+    height: 40%;
+    position: absolute;
+    z-index: -3;
+    top: -20vw;
+    left: 39vw;
+    transition: all 3s ease-in;
+}
+
+.disco-zichtbaar {
+    height: 40%;
+    position: absolute;
+    z-index: -3;
+    top: 0;
+    /* left: 39vw; */
+    margin: auto;
+    transition: all 6s ease-out;
+}
+
+#discoknop {
+    position: absolute;
+    width: 7%;
+    bottom: 30em;
+    right: 2em;
+    cursor: pointer;
+}
+
+#discoknop:hover {
+    scale: 1.1;
+    transform: rotate(10deg);
+}
+
+#discoknop:active {
+    transform: translateY(4px);
+}
+
+
+/* -------------Red Button------------- */
+
+#red {
+    background-color: red;
+    border: solid 10px rgb(109, 99, 99);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 5px 10px black;
+    position: absolute;
+    bottom: 6em;
+    right: 5em;
+    color: white;
+    font-family: 'Poppins';
+}
+
+#red:hover{
+    background-color: rgb(180, 0, 0);
+}
+
+#red:active{
+    box-shadow: none;
+    transform: translateY(20px);
+}
